@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+main {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+/* .container{
+    width: 100%;
+} */
+main .tasks {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+main .tasks .task-one,
+main .tasks .task-two,
+main .tasks .task-three {
+    box-shadow: 0 0 5px aqua, 0 0 15px white, 0 0 25px aqua;
+    padding: 10px;
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    transition: opacity 1s ;
+}
+main .tasks .task-two ,
+main .tasks .task-three {
+    min-width: 400px;
+    min-height: 220px;
+    opacity: 0;
+    
+}
+
+main .tasks .task-one h2,
+main .tasks .task-two h2, 
+main .tasks .task-three .head {
+    color: aqua;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua, 0 0 80px aqua;
+}
+
+
+main .tasks .task-one .inputs-results{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+main .tasks .task-two .inputs-results{
+    text-align: center;
+    margin: 10px;
+}
+
+
+main .tasks .task-one .inputs,
+main .tasks .task-two .inputs {
+    display: flex;
+    gap: 15px;
+    justify-content: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+main .tasks .task-two .inputs{
+    margin-top: 30px;
+    display: none;
+    transition: all 0.3s;
+}
+
+main .tasks .task-one input,
+main .tasks .task-two input,
+main .tasks .task-three input {
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    width: 180px;
+    font-size: 16px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.results {
+    margin: 10px;
+}
+main .tasks .task-two .result{
+margin: 30px;
+visibility: hidden;
+transition: visibility 0.5s ;
+}
+
+main .tasks .task-one .result,
+main .tasks .task-two .result,
+main .tasks .task-three .result {
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 3px white dashed;
+
+
+}
+
+
+main .tasks .task-one .buttons,
+main .tasks .task-two .buttons {
+    text-align: center;
+}
+
+main .tasks .task-two .buttons{
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+main .tasks .task-one button,
+main .tasks .task-two button {
+    min-width: 120px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: aqua;
+    border: 3px white solid;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua, 0 0 80px aqua, 0 0 160px aqua;
+    
+}
+
+
+
+main .sliders{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+main .sliders .slider{
+    padding: 5px;
+    border-radius: 100%;
+    border: 0;
+    margin: 10px;
+}
+main .sliders .slider:hover{
+    box-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px aqua, 0 0 80px aqua, 0 0 160px aqua;
+}
+
+
+
+
+
+
+
+
+/*
+
+
+/** Extra Small devices (XS) - Phones in portrait mode (max-width: 575px) 
+@media (max-width: 575px) {
+
+}
+
+/** Small devices (SM) - Phones in landscape mode (min-width: 576px and max-width: 767px) 
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/** Medium devices (M) - Tablets (min-width: 768px and max-width: 991px) 
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/** Large devices (L) - Desktops and laptops (min-width: 992px and max-width: 1199px) 
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/** Extra Large devices (XL) - Wide screens (min-width: 1200px) 
+@media (min-width: 1200px) {
+
+}
+*/

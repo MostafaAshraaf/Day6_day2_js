@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Day5 </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+
+                <!-- <div class="info-task-one"></div> -->
+
+                <div class="tasks">
+                    <div class="task-one">
+                        <h2>Task1</h2>
+                        <div class="inputs-results">
+                            <div class="inputs">
+                                <input type="number" placeholder="Number 1">
+                            </div>
+                            <div class="results">
+                                <label class="result"></label>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="next-btn"
+                                onclick="task1(this)">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="task-two">
+                        <h2 >Task2</h2>
+                        <div class="inputs-results">
+                            <div class="results">
+                                <label class="result"></label>
+                            </div>
+                            <div class="inputs">
+                                <label for="new-color">Color :</label>
+                                <input type="color" id="new-color">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="change-color"
+                                onclick="task2(this)">change Color</button>
+                        </div>
+                    </div>
+
+                    <div class="task-three">
+                        <h2 class="head">Task3</h2>
+                        <div class="results">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sliders">
+                    <button class="slider task1"
+                        onclick="slider(this)"></button>
+                    <button class="slider task2"
+                        onclick="slider(this)"></button>
+                    <button class="slider task3"
+                        onclick="slider(this)"></button>
+                </div>
+
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
